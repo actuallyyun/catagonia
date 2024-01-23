@@ -4,7 +4,8 @@
     text-align: center;
     width: 100;
     z-index: 302;
-    background-color: blueviolet;
+    background-color: #E0592B;
+    color: white;
 }
 
 
@@ -14,11 +15,13 @@
     justify-content: start;
     gap: 1rem;
     text-decoration: none;
+    
 
 }
 
 .header-tabs a{
     text-decoration: none;
+    color:#FFFFFF;
 }
 
 .header-tabs_sale{
