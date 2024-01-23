@@ -4,7 +4,440 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce</title>
+    <link rel="stylesheet" href="./styles/utility.css"/>
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css"/>
+    <title>Catagonia</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header-wrapper">
+      <ul role="menu" class="header-tabs">
+        <li role="menuitem">
+          <a href="#" target="_blank" rel="noopener">Take Miaotion</a>
+        </li>
+        <li role="menuitem">
+          <a href="#" target="_blank" rel="noopener">Start a Repair</a>
+        </li>
+      </ul>
+      <div class="header-tabs_sale">
+        <span role="button" aria-label="Sale" tabindex="0">
+          <span>Sale</span>
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            style="width: 1.2rem; height: 1.2rem; fill: #fa4616"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-items">
+        <ul role="tree">
+          <li role="none">
+            <button
+              role="treeitem"
+              type="button"
+              aria-expanded="false"
+              aria-controls="nav-shop"
+              aria-owns="nav-shop"
+            >
+              Shop
+            </button>
+          </li>
+          <li role="none">
+            <button
+              role="treeitem"
+              type="button"
+              aria-expanded="false"
+              aria-controls="nav-activism"
+              aria-owns="nav-activism"
+            >
+              Activism
+            </button>
+          </li>
+          <li role="none">
+            <button
+              role="treeitem"
+              type="button"
+              aria-expanded="false"
+              aria-controls="nav-sports"
+              aria-owns="nav-sports"
+            >
+              Sports
+            </button>
+          </li>
+          <li role="none">
+            <button
+              role="treeitem"
+              type="button"
+              aria-expanded="false"
+              aria-controls="nav-stories"
+              aria-owns="nav-stories"
+            >
+              Stories
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-logo">
+        <a href="#" aria-label="Go to Catagonia Home Page">
+          <span class="visually-hidden">Catagonia Home page</span>
+          <figure aria-hidden="true">
+            <img src="https://placekitten.com/300/70" alt="Catagonia logo" height="auto"/>
+          </figure>
+        </a>
+      </div>
+      <div class="nav-icons">
+        <div>
+          <button aria-label="Search">
+            <svg
+              style="width: 1.2rem; height: 1.2rem; fill: #fa4616"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button aria-label="Log in">
+            <svg
+              style="width: 1.2rem; height: 1.2rem; fill: #fa4616"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button aria-label="Shopping cart">
+            <svg
+              style="width: 1.2rem; height: 1.2rem; fill: #fa4616"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button aria-label="Shopping cart">
+            <svg
+              style="width: 1.2rem; height: 1.2rem; fill: #fa4616"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button aria-controls="utility-nav">
+            <span style="display: none">Open Menu</span>
+            <svg
+              style="width: 1.2rem; height: 1.2rem; fill: #fa4616"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="hero-main_container">
+          <figure class="hero-main_bg">
+            <picture>
+              <source
+                srcset="
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=90&sw=100&   100w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=295&   295w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=310&   310w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=334&   334w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=80&sw=350&   350w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=425&   425w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=80&sw=500&   500w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=526&   526w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=552&   552w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=590&   590w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=594&   594w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=620&   620w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=668&   668w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=80&sw=800&   800w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=850&   850w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=75&sw=1000& 1000w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=1052& 1052w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=1104& 1104w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=1121& 1121w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=1188& 1188w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=75&sw=1300& 1300w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=85&sw=1548& 1548w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=75&sw=1600& 1600w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=70&sw=2000& 2000w,
+                  https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6f59d4d1/images/wornwear/ww-snow-events-dark.jpg?q=70&         2650w
+                "
+                sizes="auto"
+              />
+              <img
+                src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/d…4d1/images/wornwear/ww-snow-events-dark.jpg?q=70&"
+                alt="Patagonia worn wear snow events"
+              />
+            </picture>
+          </figure>
+          <div class="hero-main_content">
+            <h1 class="text-xxl">The Miao and Wao Tour</h1>
+            <p class="text-base">  
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam pariatur ab eius quisquam aperiam perspiciatis saepe nesciunt, voluptate quis tempora vel, tempore molestias nam consequatur excepturi quas omnis voluptatem?
+            </p>
+            <a href="#" class="btn" aria-label="Read more about free cuddles">
+              <span> Free Cuddles On The Road</span>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="slider-collections_container">
+          <div class="swiper-wrapper">
+            <ul role="tree" class="card-group">
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <li role="treeitem">
+                <article class="card">
+                  <img src="https://placekitten.com/200/200" 
+                  alt="A cute placeholder cat image"/>
+                  <div class="card-caption text-white">
+                    <span class="text-xxl">Sale</span>
+                    <a role="button" aria-label="Click to shop">
+                      <span class="text-xxl">Shop</span>
+                    </a>
+                  </div>
+                </article>   
+              </li>
+              <!--TODO:fix the layout: to only have one row, and set overflow property-->
+            </ul>
+                  
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="hero-main_container">
+          <figure class="hero-main_bg">
+              <img
+                src="https://placekitten.com/1200/600"
+                alt="Patagonia worn wear snow events"
+              />
+            </picture>
+          </figure>
+          <div class="hero-main_content_center">
+            <h1 class="text-xxl">Lorem</h1>
+            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vitae et reprehenderit repudiandae quaerat, nam nobis voluptate illum eius est dolore ratione dolores rerum ipsam accusantium deleniti beatae. Tenetur, quos.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea animi neque pariatur tempora nisi sit aperiam fuga deserunt molestias autem reiciendis eligendi, est quo tenetur corrupti repellendus in adipisci blanditiis.
+            </p>
+            <a role="button" class="btn" aria-label="Click to watch the film">
+              <span class="text-xl">Watch the Film</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="slider-collections_container">
+        <span class="text-xxl">Latest Stories</span>
+        <span class="text-base"><a href="#" role="button">View all</a></span>
+        <ul role="tree" class="card-group">  
+          <li role="treeitem">
+            <article class="card">
+              <img src="https://placekitten.com/200/200" 
+              alt="A cute placeholder cat image"/>
+              <div class="card-caption text-white">
+                <span class="text-xxl">Sale</span>
+                <a role="button" aria-label="Click to shop">
+                  <span class="text-xxl">Shop</span>
+                </a>
+              </div>
+            </article>   
+          </li>
+
+          </div>
+        </ul>
+      </div>
+      </section>
+    </main>
+    <footer>
+      <ul role="tree">
+        <li role="treeitem">
+          <h2>Newsletter Signup</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, natus aperiam ipsa exercitationem dignissimos voluptate esse voluptatum laborum praesentium facere sequi minus similique ea incidunt expedita aliquam molestiae ullam nobis!</p>
+          <form action="#">
+            <label for="emial-subscription-form-email">
+              <span>E-mail:</span>
+            <input type="email" required id="user-email">
+          </label>
+          </form>
+          <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vero pariatur quis dignissimos cupiditate? Labore sunt voluptatibus soluta eum! Odio ad, vel perferendis nam rem soluta repellat suscipit deleniti ipsam.</small>
+
+        </li>
+        <li role="listitem">
+          <div class="footer_help_column">
+            <h3 class="text-xl">Get Help</h3>
+            <div class="footer_help-btn-group">
+              <a href="#" class="btn">Customer Service</a>
+              <a href="#" class="btn">Delivery</a>
+              <a href="#" class="btn">FAQs</a>
+              <a href="#" class="btn">Repairs</a>
+              <a href="#" class="btn">Returns</a>
+              <a href="#" class="btn">Login</a>
+              <a href="#" class="btn">Contact Form</a>
+              <a href="#" class="btn">Size Guide</a>
+            </div>
+          </div>
+        </li>
+        <li role="listitem" class="footer_sitemap_column">
+          <h3 class="text-xl">Information</h3>
+          <div class="footer_sitemap_links">
+            <ul role="group">
+              <li role="listitem">
+                <a href="#">Catagonia Action Works</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Privacy Notice</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Terms and Conditions</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Sale</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Careers</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Press</a>
+              </li>
+            </ul>
+            <ul role="group">
+              <li role="listitem">
+                <a href="#">Catagonia Action Works</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Privacy Notice</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Terms and Conditions</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Sale</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Careers</a>
+              </li>
+              <li role="listitem">
+                <a href="#">Press</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
