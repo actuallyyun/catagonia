@@ -1,0 +1,27 @@
+.header-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 100;
+    z-index: 302;
+    background-color: blueviolet;
+}
+
+
+.header-tabs{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    text-decoration: none;
+
+}
+
+.header-tabs a{
+    text-decoration: none;
+}
+
+.header-tabs_sale{
+    display: block;
+    text-align: left;
+}

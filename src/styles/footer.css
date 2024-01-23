@@ -1,0 +1,12 @@
+footer{
+    background: black;
+    color:#FFFFFF;
+    padding: 0 64px 120px;
+
+}
+footer>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    grid-row: auto;
+}
