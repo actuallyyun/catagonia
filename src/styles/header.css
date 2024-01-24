@@ -1,3 +1,17 @@
+@keyframes gradient{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+
 .header-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,6 +24,8 @@
     animation: gradient 6s ease infinite alternate;
     height: 4.8rem;
 }
+
+
 
 
 .header-tabs{
