@@ -1,11 +1,14 @@
 .header-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     text-align: center;
-    width: 100;
+    width: 100%;
     z-index: 302;
-    background-color: #E0592B;
-    color: white;
+    background: linear-gradient(-45deg, #2B0096, #E0592B);
+    background-size: 400vw 400vw;
+    animation: gradient 6s ease infinite alternate;
+    height: 4.8rem;
 }
 
 
@@ -15,8 +18,8 @@
     justify-content: start;
     gap: 1rem;
     text-decoration: none;
-    
-
+    width: 80%;
+    margin: auto;
 }
 
 .header-tabs a{
@@ -27,4 +30,5 @@
 .header-tabs_sale{
     display: block;
     text-align: left;
+    color: #fa4616;
 }

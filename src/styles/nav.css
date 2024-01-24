@@ -2,9 +2,11 @@
     max-height: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 10rem;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
 .nav-items>ul{
@@ -23,7 +25,6 @@
 
 .nav-icons{
     display: flex;
-    justify-content: end;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
