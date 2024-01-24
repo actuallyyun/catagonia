@@ -16,15 +16,23 @@ figure{
 }
 
 .text-base{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .btn{
     min-width: 16.8rem;
-    background-color: aliceblue;
-    color: black;
+    background-color: #fff;
+    color: #000;
     font-weight: 700;
     vertical-align: middle;
+    margin:1.5rem .8rem 0;
+    transition:transform .2s cubic-bezier(.235,0,.05,.95),opacity .2s cubic-bezier(.235,0,.05,.95);
+    border-color: #0000;
+}
+
+.btn-lg{
+    padding:1.2rem 3.1rem ;
+    border-radius: 3rem;
 }
 
 .card-group{

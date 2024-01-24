@@ -6,12 +6,12 @@ main{
 
 .hero-main_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
     color: whitesmoke;
-    max-height: 500px;
+    max-height: 650px;
 }
 
 .hero-main_bg{
@@ -41,12 +41,12 @@ main{
 
 .hero-main_content_center{
     z-index: 200;
-    grid-column: -1/1;
-    grid-row: 1/4;
-    width: 60%;
-    margin: auto;
+    grid-column: 2/4;
+    grid-row: 2/5;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slider-collections_container{
