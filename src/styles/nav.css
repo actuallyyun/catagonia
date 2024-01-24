@@ -15,6 +15,11 @@
     list-style: none;
 }
 
+.nav-logo{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .nav-logo>a{
     text-align: center;
 }
