@@ -1,0 +1,108 @@
+@use "./variables";
+
+@mixin heading($font-size){
+    color:#fff;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0;
+    letter-spacing: -0.01rem;
+    font-size: $font-size;
+}
+
+@mixin text($size,$weight,$color){
+    letter-spacing: -.01em;
+    line-height: 1.25;
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+
+}
+
+@mixin nav-padding{
+    padding: 0 variables.$gap-base 0 variables.$gap-base;
+}
+
+
+@mixin hero_bg($max-height){
+        background-repeat: no-repeat;
+        height: 100%;  
+        width: 100%;
+        z-index: 100;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        max-height: $max-height;
+}
+
+@mixin bg_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin hero_content($screen-size){
+    z-index: 200;
+    grid-row: -1/1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    @if $screen-size == sm{
+        grid-column: 1/13;
+    }@else if $screen-size == md{
+        grid-column: 2/12;
+    }@else if $screen-size == lg{
+        grid-column:3/11;
+    }@else{
+        @error "Unknown direction #{$screen-size}.";
+    }
+}
+
+@mixin hero_btns_flex{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+@mixin btn(){
+    width: 100%;
+    padding:1.2rem 3.1rem ;
+    border-radius: 3rem;
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: 700;
+    position: relative;
+    transition: transform .2s cubic-bezier(.235,0,.05,.95),opacity .2s cubic-bezier(.235,0,.05,.95);
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
+@mixin responsive($screen-size){
+    @media (min-width:$screen-size) {
+        @content;
+    }
+    
+}
+
+
+@mixin gradient-animation($name) {
+    @keyframes  #{name}{
+        0%{
+            background-position: 0% 50%;
+        }
+    
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 50% 0%;
+        }
+    }
+  }

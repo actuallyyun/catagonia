@@ -1,0 +1,256 @@
+@use "./mixins";
+
+@use "./variables";
+
+@use "./global";
+
+
+
+
+// card
+.card{
+    width: 342px; 
+}
+
+//responsive
+
+
+
+//header
+.header-wrapper{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height:4.8rem;
+}
+
+.header-tabs{
+    display: none;
+    color: variables.$secondary-color;
+
+    &_sale{
+        display:flex;
+        justify-content: center;
+    }
+
+    &_link{
+        margin-right: variables.$gap-base;
+    }
+
+    &_link a{
+        @include mixins.text(variables.$text-sm,variables.$text-baseweight,variables.$primary-color-light);
+
+    }
+}
+.header-tabs_sale{
+    @include mixins.text(variables.$text-sm,variables.$text-heavy,variables.$secondary-color)
+}
+
+
+@include mixins.gradient-animation(gradient);
+
+.header-wrapper{
+    display: grid;
+    width: 100%;
+    z-index: 302;
+    background: linear-gradient(-45deg, variables.$gradient-from,variables.$gradient-to);
+    background-size: 400vw 400vw;
+    animation: gradient 6s ease infinite alternate;
+    height: 4.8rem;
+}
+
+
+
+.nav{
+    @include mixins.nav-padding;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0.8rem;
+    min-height: 5.6rem;
+    background: variables.$primary-color-light;
+}
+
+.nav-items{
+    display: none;
+
+}
+
+.nav_cols{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_cols:first-child{
+    justify-content: start;
+}
+
+.nav_cols:last-child{
+    justify-content: end;
+}
+
+.nav_icon--mobile:first-child{
+    margin-right: 2rem;
+}
+
+.nav_icon--all:first-child{
+    margin-right: 2rem;
+}
+
+
+.icon--nav{
+    width: 1.2rem; 
+    height: 1.2rem; 
+    fill: #000;
+}
+
+.nav_icon--desktop{
+    display: none;
+}
+
+.nav-logo{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-logo>a{
+    text-align: center;
+}
+
+.nav-logo figure{
+    margin: 0;
+}
+
+// hero
+
+.hero-main_container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+    color: variables.$primary-color-light;
+
+    &_center{
+        z-index: 200;
+        grid-column: 2/12;
+        grid-row: 1/-1;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+.hero-main_bg{
+    @include mixins.hero_bg('600px');
+}
+
+.hero-main_bg img{
+    @include mixins.bg_img;
+}
+
+.hero-main_container-center{
+    @include mixins.hero_content('sm');
+    text-align:center;
+
+}
+
+.hero_content--headline{
+    @include mixins.heading(variables.$hedaing-sm);
+
+}
+
+.hero_content--body{
+    font-size: variables.$text-md;
+    margin-top: variables.$gap-sm
+}
+
+.hero-content--btns{
+    @include mixins.hero_btns_flex;
+}
+
+.btn{
+    @include mixins.btn;
+}
+
+@include mixins.responsive(variables.$sm-screen){
+    
+    .hero_content--headline{
+        font-size: variables.$heading-base;
+    }
+
+    .hero-main_container-center{
+        @include mixins.hero_content('md');
+        
+    }
+    
+}
+
+@include mixins.responsive(variables.$md-screen){
+    .hero_content--headline{
+        font-size: variables.$heading-md;
+    }
+
+    .hero_content--body{
+        font-size: variables.$text-lg;
+    }
+
+    .hero-main_container-center{
+        @include mixins.hero_content('lg')
+    }
+
+    .hero-content--btns{
+        flex-direction: row;
+        max-width: 35rem;
+    }
+}
+
+@include mixins.responsive(variables.$lg-screen){
+.header-wrapper{
+    @include mixins.nav-padding;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-tabs{
+    grid-column: 1/2;
+    display: flex;
+}
+
+.header-tabs_sale{
+    justify-content: start;
+}
+.nav_icon--mobile{
+    display: none;
+}
+
+.nav-items{
+    display: block;
+
+    &_lists{
+        display: flex;
+        justify-content: center;
+        gap:variables.$gap-base;
+    }
+}
+
+.nav_cols:last-child{
+    display: flex;
+    gap: variables.$gap-base;
+}
+
+
+
+.nav_icon--desktop{
+    display: block;
+}
+
+}
+
+
+
