@@ -7,13 +7,12 @@
   }
 }
 
-
-@mixin flex-col($gap){
-    display: flex;
-    flex-direction: column;
-    gap: $gap;
-    justify-content: space-between;
-    align-items: start;
+@mixin flex-col($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  justify-content: space-between;
+  align-items: start;
 }
 @mixin heading($font-size) {
   color: #fff;
