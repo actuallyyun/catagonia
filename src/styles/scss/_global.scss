@@ -13,5 +13,20 @@ p{
 a:hover{
     box-shadow: none;
     outline: 0;
+}
 
+li{
+    list-style: none;
+}
+
+figure{
+    margin:0;
+}
+
+section{
+    padding-bottom: 3rem;
+}
+
+.visually-hidden{
+    display: none;
 }

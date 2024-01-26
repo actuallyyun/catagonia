@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/utility.css"/>
-    <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/footer.css"/>-->
-    <link rel="stylesheet" href="./style.css"/>
+    <!--<link rel="stylesheet" href="./styles/nav.css" />-->
+    <!--<link rel="stylesheet" href="./styles/header.css" />-->
+    <!--<link rel="stylesheet" href="./styles/main.css" />-->
+    <link rel="stylesheet" href="./styles/footer.css"/>
+    <link rel="stylesheet" href="./styles/css/style.css"/>
     <title>Catagonia</title>
   </head>
   <body>
     <div class="header-wrapper">
       <ul role="menu" class="header-tabs">
-        <li role="menuitem">
+        <li role="menuitem" class="header-tabs_link">
           <a href="#" target="_blank" rel="noopener">Take Miaotion</a>
         </li>
-        <li role="menuitem">
+        <li role="menuitem" class="header-tabs_link">
           <a href="#" target="_blank" rel="noopener">Start a Repair</a>
         </li>
       </ul>
@@ -41,8 +41,36 @@
       </div>
     </div>
     <nav class="nav">
+      <div class="nav_cols">
+        <div class="nav_icon--mobile">
+          <button aria-controls="utility-nav">
+            <span style="display: none">Open Menu</span>
+            <svg class="icon--nav"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+      </div>
+      <div class="nav_icon--mobile">
+        <button aria-label="Search">
+          <svg class="icon--nav"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </button>
+      </div>   
       <div class="nav-items">
-        <ul role="tree">
+        <ul role="tree" class="nav-items_lists">
           <li role="none">
             <button
               role="treeitem"
@@ -89,6 +117,8 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="nav_cols">
       <div class="nav-logo">
         <a href="#" aria-label="Go to Catagonia Home Page">
           <span class="visually-hidden">Catagonia Home page</span>
@@ -97,11 +127,12 @@
           </figure>
         </a>
       </div>
-      <div class="nav-icons">
-        <div>
+    </div>
+    <div class="nav_cols">
+      
+        <div class="nav_icon--desktop">
           <button aria-label="Search">
-            <svg
-              style="width: 1.2rem; height: 1.2rem; fill: #000"
+            <svg class="icon--nav"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -112,10 +143,9 @@
             </svg>
           </button>
         </div>
-        <div>
+        <div class="nav_icon--desktop">
           <button aria-label="Log in">
-            <svg
-              style="width: 1.2rem; height: 1.2rem; fill: #000"
+            <svg class="icon--nav"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
             >
@@ -126,16 +156,15 @@
             </svg>
           </button>
         </div>
-        <div>
+        <div class="nav_icon--all">
           <button aria-label="Favorite">
-            <svg style="width: 1.2rem; height: 1.2rem; fill: #000"
+            <svg class="icon--nav" 
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
           </button>
         </div>
-        <div>
+        <div class="nav_icon--all">
           <button aria-label="Shopping cart">
-            <svg
-              style="width: 1.2rem; height: 1.2rem; fill: #000"
+            <svg class="icon--nav"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
             >
@@ -146,11 +175,10 @@
             </svg>
           </button>
         </div>
-        <div>
+        <div class="nav_icon--desktop">
           <button aria-controls="utility-nav">
             <span style="display: none">Open Menu</span>
-            <svg
-              style="width: 1.2rem; height: 1.2rem; fill: #000"
+            <svg class="icon--nav"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -160,11 +188,11 @@
               />
             </svg>
           </button>
-        </div>
       </div>
+    </div>
     </nav>
     <main>
-      <section>
+      <section class="campaign">
         <div class="hero-main_container">
           <figure class="hero-main_bg">
               <img
@@ -173,109 +201,84 @@
               />
             </picture>
           </figure>
-          <div class="hero-main_content_center animation">
-            <h1 class="text-xxl">Not Too Cold</h1>
-            <p class="text-base">Winter presents some of the most challenging running conditions; but if you have the right layers and frame of mind, it can also lead to some of the most rewarding moments you’ll find on the trails.</p>
-            <div class="hero-main_content_btns">
-            <a role="button" class="btn btn-lg" aria-label="Click to watch the film">
+          <div class="hero-main_container-center animation">
+            <h1 class="hero_content--headline">Not Too Cold</h1>
+            <p class="hero_content--body">Winter presents some of the most challenging running conditions; but if you have the right layers and frame of mind, it can also lead to some of the most rewarding moments you’ll find on the trails.</p>
+            <div class="hero-content--btns">
+            <a role="button" class="btn" aria-label="Click to watch the film">
               <span class="text-xl">Shop Men's</span>
             </a>
-            <a role="button" class="btn btn-lg" aria-label="Click to watch the film">
+            <a role="button" class="btn" aria-label="Click to watch the film">
               <span class="text-xl">Shop Women's</span>
             </a>
           </div>
         </div>
       </section>
-      <section>
+      <section class="collections">
         <div class="slider-collections_container">
           <div class="swiper-wrapper">
             <ul role="tree" class="card-group">
               <li role="treeitem">
                 <article class="card">
-                  <img src="https://placekitten.com/200/200" 
+                  <img src="./img/collections-cat-1.jpg" 
                   alt="A cute placeholder cat image"/>
                   <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
+                    <span class="card-caption-heading">Men's</span>
+                    <a role="button" aria-label="Click to shop" class="card-caption-button">
+                      <span>Shop</span>
                     </a>
                   </div>
                 </article>   
               </li>
               <li role="treeitem">
                 <article class="card">
-                  <img src="https://placekitten.com/200/200" 
-                  alt="A cute placeholder cat image"/>
+                  <img src="./img/cat-sale.jpg" 
+                  alt="A orange cat image"/>
                   <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
+                    <span class="card-caption-heading">Women's</span>
+                    <a role="button" aria-label="Click to shop" class="card-caption-button">
+                      <span>Shop</span>
                     </a>
                   </div>
                 </article>   
               </li>
               <li role="treeitem">
                 <article class="card">
-                  <img src="https://placekitten.com/200/200" 
+                  <img src="./img/collections-cat-2.jpg" 
                   alt="A cute placeholder cat image"/>
                   <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
+                    <span class="card-caption-heading">Kid's & Baby</span>
+                    <a role="button" aria-label="Click to shop" class="card-caption-button">
+                      <span >Shop</span>
                     </a>
                   </div>
                 </article>   
               </li>
               <li role="treeitem">
                 <article class="card">
-                  <img src="https://placekitten.com/200/200" 
+                  <img src="./img/collections-cat-4.jpg" 
                   alt="A cute placeholder cat image"/>
                   <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
+                    <span class="card-caption-heading">Gear & Packs</span>
+                    <a role="button" aria-label="Click to shop" class="card-caption-button">
+                      <span >Shop</span>
                     </a>
                   </div>
                 </article>   
               </li>
               <li role="treeitem">
                 <article class="card">
-                  <img src="https://placekitten.com/200/200" 
+                  <img src="./img/collections-cat-3.jpg" 
                   alt="A cute placeholder cat image"/>
                   <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
+                    <span class="card-caption-heading">Books</span>
+                    <a role="button" aria-label="Click to shop" class="card-caption-button">
+                      <span >Shop</span>
                     </a>
                   </div>
-                </article>   
+                </article>    
               </li>
-              <li role="treeitem">
-                <article class="card">
-                  <img src="https://placekitten.com/200/200" 
-                  alt="A cute placeholder cat image"/>
-                  <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
-                    </a>
-                  </div>
-                </article>   
-              </li>
-              <li role="treeitem">
-                <article class="card">
-                  <img src="https://placekitten.com/200/200" 
-                  alt="A cute placeholder cat image"/>
-                  <div class="card-caption text-white">
-                    <span class="text-xxl">Sale</span>
-                    <a role="button" aria-label="Click to shop">
-                      <span class="text-xxl">Shop</span>
-                    </a>
-                  </div>
-                </article>   
-              </li>
-              <!--TODO:fix the layout: to only have one row, and set overflow property-->
-            </ul>
+               </ul>
             <div class="swiper-icon-left" role="button" aria-label="Swipe left">
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
             </div>
@@ -326,7 +329,7 @@
             </picture>
           </figure>
           <div class="hero-main_content lineUp">
-            <h1 class="text-xxl">The Miao and Wao Tour</h1>
+            <h1 class="hero_headline">The Miao and Wao Tour</h1>
             <p class="text-base">  
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam pariatur ab eius quisquam aperiam perspiciatis saepe nesciunt, voluptate quis tempora vel, tempore molestias nam consequatur excepturi quas omnis voluptatem?
             </p>
