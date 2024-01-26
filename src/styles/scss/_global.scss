@@ -30,3 +30,43 @@ section{
 .visually-hidden{
     display: none;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat","system-ui","Segoe UI","Roboto","Helvetica Neue";
+    color: #fff;
+    font-size: 16px;
+}
+
+p{
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background: #0000;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 0;
+    outline: 0;
+    text-transform: none;
+    text-decoration-thickness: clamp(.1rem,.12em,.225rem);
+    text-underline-offset: clamp(.2rem,.16em,.3rem);
+    font-size: 16px;
+}

@@ -31,6 +31,78 @@ section {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue";
+  color: #fff;
+  font-size: 16px;
+}
+
+p {
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0 0;
+  outline: 0;
+  text-transform: none;
+  text-decoration-thickness: clamp(0.1rem, 0.12em, 0.225rem);
+  text-underline-offset: clamp(0.2rem, 0.16em, 0.3rem);
+  font-size: 16px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.lineUp {
+  animation: lineUp 5s ease-out infinite;
+}
+
 .slider-collections_container {
   padding: 1.6rem;
 }
@@ -170,17 +242,6 @@ section {
   font-size: 1rem;
 }
 
-@keyframes name {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
 .header-wrapper {
   display: grid;
   width: 100%;
@@ -259,16 +320,15 @@ section {
   width: 100%;
   color: #fff;
 }
-.hero-main_container_center {
+.hero-main_container-center {
   z-index: 200;
-  grid-column: 2/12;
-  grid-row: 1/-1;
-  height: auto;
+  grid-row: -1/1;
   margin: auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  grid-column: 1/13;
+  text-align: center;
+  padding: 3.2rem;
 }
 
 .hero-main_bg {
@@ -287,16 +347,6 @@ section {
   height: 100%;
 }
 
-.hero-main_container-center {
-  z-index: 200;
-  grid-row: -1/1;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  grid-column: 1/13;
-  text-align: center;
-}
-
 .hero_content--headline {
   color: #fff;
   font-weight: 700;
@@ -308,7 +358,7 @@ section {
 
 .hero_content--body {
   font-size: 1.4rem;
-  margin-top: 1.4rem;
+  margin: 1.4rem 0;
 }
 
 .hero-content--btns {
@@ -408,6 +458,9 @@ section {
   }
   .slider-collections_container .swiper-icon-right {
     grid-column: 12/13;
+  }
+  .hero-main_container-left {
+    grid-column: 1/8;
   }
 }
 

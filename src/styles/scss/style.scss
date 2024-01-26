@@ -2,10 +2,18 @@
 @use "./variables";
 @use "./global";
 
+@include mixins.gradient-animation(gradient);
+@include mixins.animation_lineUp(lineUp);
+
+.lineUp{
+    animation: lineUp 5s  ease-out infinite; 
+}
 
 
 
 // card
+
+
 .slider-collections_container{
     padding: variables.$gap-base;
 
@@ -113,7 +121,6 @@
 }
 
 
-@include mixins.gradient-animation(gradient);
 
 .header-wrapper{
     display: grid;
@@ -199,16 +206,11 @@
     width: 100%;
     color: variables.$primary-color-light;
 
-    &_center{
-        z-index: 200;
-        grid-column: 2/12;
-        grid-row: 1/-1;
-        height: auto;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    &-center{
+        @include mixins.hero_content('sm');
+    text-align:center;
+    padding: variables.$gap-base*2;
+        
     }
 }
 
@@ -221,12 +223,6 @@
     @include mixins.bg_img;
 }
 
-.hero-main_container-center{
-    @include mixins.hero_content('sm');
-    text-align:center;
-
-}
-
 .hero_content--headline{
     @include mixins.heading(variables.$hedaing-sm);
 
@@ -234,7 +230,8 @@
 
 .hero_content--body{
     font-size: variables.$text-md;
-    margin-top: variables.$gap-sm
+    margin: variables.$gap-sm 0;
+
 }
 
 .hero-content--btns{
@@ -279,6 +276,7 @@
     .card{
         width: 45vw
     }
+
 }
 
 @include mixins.responsive(variables.$lg-screen){
@@ -334,6 +332,9 @@
     }
 }
 
+.hero-main_container-left{
+    grid-column: 1/8;
+}
 }
 
 
