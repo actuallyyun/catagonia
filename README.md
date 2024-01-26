@@ -1,33 +1,19 @@
-# Week 1 Assignment
+## Catagonia, a frontend e-commerce project
 
-This assignment aims to practice HTML, CSS and SASS
+- It is a copy of the [Patagonia](https://www.patagonia.com/home/) website.
+- It is a project for practicing HTML, CSS and SASS.
 
-## Requirement
+### Project highlights
 
-Create an e-commerce website
+- It is fully responsive.
+- It is built with Flexbox and Grid. Grid is not only used for general layout, but also for achieving overlay effect in `hero` and `card` components.
+- It is built with CSS animation. `gradient`,`hover`,line up effects are used.
+- It utilizes SASS. Variables,mixins,conditions are used. SCSS files are organized in a modular way.
+- It is built with BEM methodology in naming CSS classes.
+- It dedicates to accessibility, built with semantic HTML tags and `aria` attributes.
 
-1. Git/GitHub
 
-- create a simple `README` file to introduce yourself
-- submit the assignment by open a pull request (PR)
-- make the repository public
-- add label to your PR
 
-2. HTML and Accessibility
+**Note**: This is the week 1 project of the [Integridy Oy's Full Stack program](https://www.integrify.io/program/finland/full-stack).Thanks go to the instructors(@anhNguyenNgoc),staff at Integrigy and collegates for their help and support.
 
-- Make use of different tags: headings, paragraphs, link, italic, ordered list, unordered list,table, form
-- Check out more tags that might be helpful: address, section, article, audio
-
-3. CSS
-
-- add styling to the HTML file using Flexbox and Grid
-- add basic animation (hover effect, active link styles, typing effect)
-- the web page does not need to be fully responsive, but at least you should have responsive scaling for Flexbox and Grid system.
-
-4. SASS
-
-- apply SAAS to current project. Make sure to at least use variables and mixins
-
-5. Other
-   - Deploy the project
-   - Write a readme file to describe your project with few more details
+**Note**: This project is not for commercial use. It is only for practicing purpose. All the images and contents are from [Patagonia](https://www.patagonia.com/home/) and unsplash.
