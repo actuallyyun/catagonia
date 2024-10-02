@@ -1,17 +1,13 @@
-## Catagonia, a frontend e-commerce project
+## Patagonia Website Clone Project 
 
-- It is a copy of the [Patagonia](https://www.patagonia.com/home/) website.
-- It is a project for practicing HTML, CSS and SASS.
+A responsive copy of the [Patagonia](https://www.patagonia.com/home/) website created to practice HTML, CSS, and SASS.
 
-### Project highlights
-
-- It is fully responsive.
-- It is built with Flexbox and Grid. Grid is not only used for general layout, but also for achieving overlay effect in `hero` and `card` components.
-- It is built with CSS animation. `gradient`,`hover`,line up effects are used.
-- It utilizes SASS. Variables,mixins,conditions are used. SCSS files are organized in a modular way.
-- It is built with BEM methodology in naming CSS classes.
-- It dedicates to accessibility, built with semantic HTML tags and `aria` attributes.
-
+### Key Highlights:
+- Fully responsive design using Flexbox and Grid, with Grid applied for layout and overlay effects.  
+- Features CSS animations with gradient, hover, and line-up effects.  
+- Built with SASS, using variables, mixins, and conditions in a modular SCSS structure.  
+- Follows BEM methodology for clean, maintainable CSS class naming.  
+- Prioritizes accessibility with semantic HTML and ARIA attributes.
 
 
 **Note**: This is the week 1 project of the [Integridy Oy's Full Stack program](https://www.integrify.io/program/finland/full-stack).Thanks go to the instructors(@anhNguyenNgoc),staff at Integrigy and collegates for their help and support.
